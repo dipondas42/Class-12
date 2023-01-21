@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.main{
+    width: 1200px;
+    margin: auto;
+}
+
+.menu{
+    background-color: blue;
+}
+.menu ul{
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    /* border-right: 1px solid white; */
+    position: relative;
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.menu ul li:hover > a{
+    background-color: blueviolet;
+    margin-left: -4px;
+}
+
+
+/* dropdown menu */
+
+.menu ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    margin-top: 10px;
+    top: 100%;
+    left: 0px;
+    
+
+}
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+    
+}
+.menu ul li ul li{ 
+    display: block;
+}
+.menu ul li ul li a:hover{
+    padding-left: 20px;
+}
+.menu ul li ul li a{
+    display: block;
+    margin-left: 0px;
+    transition: 2s;
+}
+
+
+.menu ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: aqua;
+}
+.menu ul li ul li ul li{ 
+    display: block;
+}
+.menu ul li ul li ul li a{
+    display: block;
+}
+
+.banner{
+    background-image: url(./young-mens.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    text-align: center;
+    display: block;
+    
+    /* position: relative; */
+   
+    
+}
+.header-menu ul 
+.banner1 {
+    padding: 240px 0px;
+     display: inline-block;
+}
+.banner1{
+    position: absolute;
+    top: 31%;
+    left: 4%;
+}
+
+.banner1 h2{
+    /* height: 40px;
+    width: 200px; */
+    background-color: white;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 10px;
+   
+}
+.banner1 h3{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    width: 1100px;
+    margin: auto;
+    
+}
+.btn{
+    height: 30px;
+    width: 120px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 0px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+.outside{
+    text-align: center;
+}
+
+.ul{
+    text-align: center;
+    border: 2px solid rgb(238, 195, 195);
+    margin: 20px 0px;
+    padding: 20px 0px;
+    box-shadow: 2px 2px 8px rgb(230, 213, 213);
+}
+.ol{
+    border: 2px solid whitesmoke;
+    box-shadow: 4px 4px 8px rgb(163, 163, 156) ;
+}
+.inside {
+    margin-top: 40px;
+}
+.inside1{
+    list-style-position:inside;
+    
+    
+}
+form{
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 80px;
+    
+}
+.email{
+    width: 500px;
+   margin: 25px 0px;
+   border: 1px solid white;
+   border-bottom: 1px solid #ff1d1d;
+   background-color: #ffffff;
+   height: 30px;
+   
+}
+.btn1{
+    background-color: #ff1d1d;
+    color: white;
+    padding: 7px 15px;
+    margin-left: -5px;
+}
+.btn1:hover{
+    background-color: darkmagenta;
+}
+
+.list{
+    
+    
+    background-color: #ffffff;
+    border: 3px dotted #f1f1f1;
+    margin-top: 15px;
+    text-align: center;
+}
+.list1 ul{
+   list-style-type: lower-roman;
+    list-style-position: inside;
+    /* position: absolute; */
+    display: inline-block;
+    float: left;
+    margin: 20px 35px;
+    /* top: 3%;
+    left: 7%; */
+}
+.list2{
+    list-style: square;
+    list-style-position: inside;
+    /* position: absolute; */
+    display: inline-block;
+    float: left;
+    margin: 20px 45px;
+    /* top: 3%;
+    left: 40%; */
+
+
+}
+.list3{
+    list-style-type: lower-greek;
+    list-style-position: inside;
+    /* position: absolute; */
+    display: inline-block;
+    float: left;
+    margin: 20px 45px;
+    /* top: 3%;
+    left: 70%; */
+}
+footer{
+    text-align: center;
+    font size: 40px;
+    background-color: #000000;
+    color:white;
+    
+   
+  
+}
+footer h3:hover{
+    background-color: green;
+    color: #ff1d1d;
+    display: inline-block;
+    transition: .5s;
+}
+
+.footer1 a{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    color: white;
+    border: 3px solid green;
+   
+    border-radius: 50%;
+}
+.footer1 a i{
+    line-height: 50px;
+    font-size: 20px;
+}
+.footer1 a:hover{
+    background-color: #ff1d1d;
+}
+.footer1 a i:hover{
+    color: blue;
+}
